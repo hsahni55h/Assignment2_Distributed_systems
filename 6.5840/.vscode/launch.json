@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "LaunchCoordinator",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "cwd": "${fileDirname}",
+            // "remotePath": "",
+            // "port": 1278,
+            // "host": "127.0.0.1",
+            "program": "${fileDirname}",
+            "env": {},
+            "args": ["pg*.txt"],
+            "showLog": true
+        },
+        {
+            "name": "LaunchWorker",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "cwd": "${fileDirname}",
+            // "remotePath": "",
+            // "port": 1278,
+            // "host": "127.0.0.1",
+            "program": "${fileDirname}",
+            "env": {},
+            "args": ["../mrapps/wc.so"],
+            "showLog": true
+        }
+    ]
+}
