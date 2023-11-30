@@ -215,9 +215,9 @@ func SendFinish(t Task) bool {
 // usually returns true.
 // returns false if something goes wrong.
 func call(rpcname string, args interface{}, reply interface{}) bool {
-	c, err := rpc.DialHTTP("tcp", "3.87.99.235"+":1234")
-	// sockname := coordinatorSock()
-	// c, err := rpc.DialHTTP("unix", sockname)
+	// c, err := rpc.DialHTTP("tcp", "3.87.99.235"+":1234")
+	sockname := coordinatorSock()
+	c, err := rpc.DialHTTP("unix", sockname)
 	if err != nil {
 		log.Fatal("dialing:", err)
 	}
