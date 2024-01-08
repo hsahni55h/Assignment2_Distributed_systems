@@ -1,5 +1,5 @@
-# Assignment3_Distributed_systems
-Solution of Assignment 3 Distributed systems
+# Assignment_Distributed_systems
+Solution of Assignment 2 Distributed systems
 
 
 Clone the Repository
